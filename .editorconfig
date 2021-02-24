@@ -1,0 +1,19 @@
+# Documentation: editorconfig.org
+
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+[demo/*.html]
+indent_style = space
+indent_size = 4
+
+[src/*.js]
+indent_style = space
+indent_size = 2
+
+[test/spec/*.js]
+indent_style = space
+indent_size = 2

@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>stateful.js</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <style>
+    .bi {
+        display: inline-block;
+        vertical-align: text-bottom;
+        width: 1em;
+        height: 1em;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="container my-5">
+
+        <p class="form-group">
+            <label for="text-input">Text input</label>
+            <input type="text" id="text-input" data-st8-key="text-input" class="form-control">
+        </p>
+
+        <fieldset>
+            <legend>Checkboxes</legend>
+            <p class="form-group form-check">
+                <input type="checkbox" value="value-1" id="checkbox-1" data-st8-key="checkbox-1" class="form-check-input">
+                <label for="checkbox-1" class="form-check-label">Checkbox 1<label>
+            </p>
+            <p class="form-group form-check">
+                <input type="checkbox" value="value-2" id="checkbox-2" data-st8-key="checkbox-2" class="form-check-input">
+                <label for="checkbox-2" class="form-check-label">Checkbox 2<label>
+            </p>
+            <p class="form-group form-check">
+                <input type="checkbox" value="value-3" id="checkbox-3" data-st8-key="checkbox-3" class="form-check-input">
+                <label for="checkbox-3" class="form-check-label">Checkbox 3<label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Radio group</legend>
+            <p class="form-group form-check">
+                <input type="radio" value="value-1" id="radio-1" name="radio-group" data-st8-key="radio-group" class="form-check-input">
+                <label for="radio-1" class="form-check-label">Radio 1<label>
+            </p>
+            <p class="form-group form-check">
+                <input type="radio" value="value-2" id="radio-2" name="radio-group" data-st8-key="radio-group" class="form-check-input">
+                <label for="radio-2" class="form-check-label">Radio 2<label>
+            </p>
+            <p class="form-group form-check">
+                <input type="radio" value="value-3" id="radio-3" name="radio-group" data-st8-key="radio-group" class="form-check-input">
+                <label for="radio-3" class="form-check-label">Radio 3<label>
+            </p>
+        </fieldset>
+
+        <button class="btn btn-danger clear-state">Clear state</button>
+
+        <dl class="bg-light p-4 mt-4 mb-0">
+            <dt>Text input value</dt>
+            <dd data-st8-key="text-input"></dd>
+            <dt>Checkboxes</dt>
+            <dd>
+                <p class="d-flex align-items-center mb-1">
+                    <svg class="bi text-success mr-2" data-st8-key="checkbox-1" data-st8-show-if-value="value-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
+                    <svg class="bi text-muted mr-2" data-st8-key="checkbox-1" data-st8-hide-if-value="value-1"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    </svg>
+                    Checkbox 1
+                </p>
+                <p class="d-flex align-items-center mb-1">
+                    <svg class="bi text-success mr-2" data-st8-key="checkbox-2" data-st8-show-if-value="value-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
+                    <svg class="bi text-muted mr-2" data-st8-key="checkbox-2" data-st8-hide-if-value="value-2"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    </svg>
+                    Checkbox 2
+                </p>
+                <p class="d-flex align-items-center mb-1">
+                    <svg class="bi text-success mr-2" data-st8-key="checkbox-3" data-st8-show-if-value="value-3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
+                    <svg class="bi text-muted mr-2" data-st8-key="checkbox-3" data-st8-hide-if-value="value-3"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    </svg>
+                    Checkbox 3
+                </p>
+            </dd>
+            <dt>Radio group value</dt>
+            <dd data-st8-key="radio-group"></dd>
+        </dl>
+
+    </div>
+
+    <script src="../test/lib/jquery-3.5.1.min.js"></script>
+    <script src="../src/stateful.js"></script>
+    <script>
+    var stateful = new Stateful();
+    $('.clear-state').on('click', function(){
+        stateful.clearState();
+        stateful.applyState();
+    });
+    </script>
+
+</body>
+</html>
