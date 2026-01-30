@@ -16,15 +16,15 @@ var stateful = new Stateful();
 
 ## See a demo
 
-Run `make demo`, or open `demo/index.html` in your web browser.
+Run `npm run demo`, or open `demo/index.html` in your web browser.
 
 ## Run the tests
 
-Run `make test`, or open `test/SpecRunner.html` in your web browser.
+Run `npm test`, or open `test/SpecRunner.html` in your web browser.
 
-## Compile the minimized version
+## Build the minified version
 
-You’ll need the Closure Compiler, which you can get with `brew install closure-compiler` or directly from Google's website. If you use brew (or otherwise create a closure-compiler script in your PATH), you can run `make dist`, or otherwise you can run: `make dist COMPILER='java -jar path-to-compiler.jar'`.
+Run `npm install` to install dependencies, then `npm run build` to generate `dist/stateful.min.js`.
 
 # Documentation
 

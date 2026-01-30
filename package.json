@@ -1,0 +1,12 @@
+{
+  "name": "Stateful",
+  "private": true,
+  "scripts": {
+    "build": "esbuild src/stateful.js --minify --outfile=dist/stateful.min.js",
+    "demo": "open demo/index.html",
+    "test": "open test/SpecRunner.html"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}
